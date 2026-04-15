@@ -1,28 +1,34 @@
 {
-  "name": "something-random",
+  "name": "terminal-time-machine",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
+    "start": "tsx index.jsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/immaculate-munde/something-random.git"
+    "url": "git+https://github.com/immaculate-munde/terminal-time-machine.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/immaculate-munde/something-random/issues"
+    "url": "https://github.com/immaculate-munde/terminal-time-machine/issues"
   },
-  "homepage": "https://github.com/immaculate-munde/something-random#readme",
+  "homepage": "https://github.com/immaculate-munde/terminal-time-machine#readme",
   "dependencies": {
+    "@azure-rest/ai-inference": "^1.0.0-beta.6",
+    "@azure/core-auth": "^1.10.1",
     "@google/generative-ai": "^0.24.1",
     "dotenv": "^17.4.2",
     "ink": "^7.0.0",
     "react": "^19.2.5",
     "simple-git": "^3.36.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0"
   }
 }

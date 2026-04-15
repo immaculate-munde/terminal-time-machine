@@ -36,7 +36,7 @@ export default function Timeline({ commits = [] }) {
         const summary = await summarizeDiff(currentCommit.message, diff);
         setDetails({ summary, files, loading: false });
       } catch (error) {
-        setDetails({ summary: 'Error generating AI summary. Check your GEMINI_API_KEY.', files: [], loading: false });
+        setDetails({ summary: `Error: ${error.message}`, files: [], loading: false });
       }
     };
 

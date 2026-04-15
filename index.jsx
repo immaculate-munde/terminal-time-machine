@@ -1,11 +1,9 @@
 #!/usr/bin/env node
+import './loadEnv.js';
 import React from 'react';
 import { render } from 'ink';
 import { getRecentCommits } from './gitHelper.js';
-import Timeline from './Timeline.js';
-import dotenv from 'dotenv';
-
-dotenv.config();
+import Timeline from './Timeline.jsx';
 
 /**
  * Main application entry point.
