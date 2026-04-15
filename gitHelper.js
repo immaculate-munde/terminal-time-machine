@@ -15,3 +15,18 @@ export async function getRecentCommits() {
     message: commit.message,
   }));
 }
+
+/**
+ * Gets the diff and list of modified files for a specific commit.
+ * @param {string} hash - The commit hash.
+ * @returns {Promise<{diff: string, files: string[]}>}
+ */
+export async function getCommitDiff(hash) {
+  const git = simpleGit();
+  // Show the diff for the specific commit (comparing to its parent)
+  const diff = await git.show([hash, '--pretty=format:']);
+  const showResult = await git.show([hash, '--name-only', '--pretty=format:']);
+  const files = showResult.trim().split('\n').filter(Boolean);
+  
+  return { diff, files };
+}
