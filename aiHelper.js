@@ -13,7 +13,7 @@ export async function summarizeDiff(commitMessage, diffString) {
   const token = process.env.GITHUB_TOKEN || process.env.GEMINI_API_KEY;
   
   if (!token) {
-    throw new Error('GITHUB_TOKEN not found in process.env');
+    throw new Error('MISSING TOKEN: Please set GITHUB_TOKEN or GEMINI_API_KEY in your .env file or export it as an environment variable.');
   }
 
   const client = new ModelClient(

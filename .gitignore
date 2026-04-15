@@ -1,33 +1,5 @@
-# Node dependencies
 node_modules/
-
-# Environment variables (Crucial for protecting your Gemini API key!)
 .env
-.env.local
-.env.development
-.env.test
-.env.production
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-*.log
-
-# Editor directories and files (Cursor / VS Code)
-.vscode/
-.idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# OS generated files
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+dist/
+*.log

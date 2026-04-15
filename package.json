@@ -1,8 +1,11 @@
 {
   "name": "terminal-time-machine",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.jsx",
+  "description": "An interactive git timeline with AI summaries",
+  "type": "module",
+  "bin": {
+    "time-machine": "./index.jsx"
+  },
   "scripts": {
     "start": "tsx index.jsx",
     "test": "echo \"Error: no test specified\" && exit 1"
