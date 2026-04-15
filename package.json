@@ -1,12 +1,19 @@
 {
-  "name": "terminal-time-machine",
+  "name": "@munde-codes/terminal-time-machine",
   "version": "1.0.0",
   "description": "An interactive git timeline with AI summaries",
   "type": "module",
+  "main": "./dist/index.js",
   "bin": {
-    "time-machine": "./index.jsx"
+    "time-machine": "dist/index.js"
   },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
+    "build": "esbuild index.jsx --bundle --platform=node --format=esm --outfile=dist/index.js --banner:js=\"#!/usr/bin/env node\" --external:ink --external:react --external:simple-git --external:@google/generative-ai --external:@azure-rest/ai-inference --external:@azure/core-auth --external:dotenv",
+    "prepublishOnly": "npm run build",
     "start": "tsx index.jsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +24,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "bugs": {
     "url": "https://github.com/immaculate-munde/terminal-time-machine/issues"
   },
@@ -32,6 +38,7 @@
     "simple-git": "^3.36.0"
   },
   "devDependencies": {
+    "esbuild": "^0.28.0",
     "tsx": "^4.21.0"
   }
 }
