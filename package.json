@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/immaculate-munde/something-random#readme",
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "dotenv": "^17.4.2",
     "ink": "^7.0.0",
     "react": "^19.2.5",
