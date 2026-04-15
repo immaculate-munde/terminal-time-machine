@@ -1,0 +1,27 @@
+{
+  "name": "something-random",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/immaculate-munde/something-random.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/immaculate-munde/something-random/issues"
+  },
+  "homepage": "https://github.com/immaculate-munde/something-random#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "ink": "^7.0.0",
+    "react": "^19.2.5",
+    "simple-git": "^3.36.0"
+  }
+}
